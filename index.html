@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Personagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Galeria</h1>
+
+    <div class="galeria">
+        <div class="item">
+            <img src="img/dean.jpg" alt="Dean Winchester" onclick="show('A Espada de Miguel.')">
+            <p>Dean Winchester</p>
+        </div>
+
+        <div class="item">
+            <img src="img/harry-potter.jpg" alt="Harry Potter" onclick="show('O Menino que sobreviveu.')">
+            <p>Harry Potter</p>
+        </div>
+
+        <div class="item">
+            <img src="img/batman.jpg" alt="Batman" onclick="show('O Cavaleiro das Trevas.')">
+            <p>Batman</p>
+        </div>
+    </div>
+
+    <p id="info">Clique num personagem para ver sobre.</p>
+
+    <script>
+        function show(text) {
+            document.getElementById("info").innerText = text;
+        }
+    </script>
+
+</body>
+
+</html>
